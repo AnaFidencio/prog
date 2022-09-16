@@ -9,14 +9,19 @@
     //Caso não acerte, o programa deverá retornar:
     //NÃO FOI DESSA VEZ... TENTE NOVAMENTE!
 
-    //ENTRADA
+   
+    const nomeCore = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
 
+    const resposta = prompt(`informe uma cor entre: ${nomeCore}`).toLocaleLowerCase();
+    let sorteador = Math.floor(Math.random()*7)
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    if (nomeCore.indexOf(resposta) === sorteador) {
+        document.write(`UAU!!!!! VOCÊ É SORTUDO  <br> Resposta: <br> ${resposta.toUpperCase()}`)
+    } else if (nomeCore.indexOf(resposta) === -1) {
+        document.write(`COR NÃO ENCONTRADA, POR FAVOR REVISE A RESPOSTA E TENTE NOVAMENTE.`)
+    } else if (nomeCore.indexOf(resposta) !== sorteador) {
+        document.write(`POXA QUE PENA!!! VOCÊ NÃO DEU SORTE E SE QUISER ARRISCAR, TENTE NOVAMENTE!`)
+    }
 
 
     /*
