@@ -6,12 +6,12 @@
     //Identifique todos os nomes que contém "João" em qualquer parte do nome e separe-os em uma lista. Apresente a lista ao final do programa. Considere que poderão haver "Joãos" sem ~ (til).
 
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
-    let joao = [];
+    let listaJoao = [];
 
     for(resultado of listaDeNomes){
-        if(resultado.toUpperCase().replace("A", "Ã").indexOf("JOAO") >= 0){
-            joao.push(resultado);
+        if(resultado.toUpperCase().replace("Ã", "A").indexOf("JOAO")>=0){
+            listaJoao.push(resultado);
         }
     }
-document.write(`A lista de Joões é: ${joao}`);
+document.write(`A lista de Joões é: ${listaJoao}`);
 </script>

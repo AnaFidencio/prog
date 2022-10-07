@@ -5,6 +5,20 @@
     // let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
     //Identifique APENAS os números INTEIROS e POSITIVOS. Adicione-os em uma lista e apresente ao fim do programa, indicando também quantos números foram localizados.
 
-    let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+  let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+  let listaIP = [];
+  let resto = [];
+
+  //PROCESSAMENTO
+  for (let numero of listaDeNumeros) {
+    if (numero > 0 && numero % 1 === 0) {
+      listaIP.push(numero);
+    } else {
+      resto.push(numero);
+    }
+  }
+  //SAÍDA
+  document.write(`Os números Inteiros e Positivos são: ${listaIP}<br/> A sua quantidade é: ${listaIP.length}<br/> Os números restantes são: ${resto}`
+  );
 
 </script>
