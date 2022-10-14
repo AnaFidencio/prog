@@ -2,28 +2,31 @@
 <script>
     /*
     PROBLEMA
-    Faça um programa que pergunte ao usuário um número inicial e um número final. Verifique se o número inicial é menor que o número final e apresente na tela os números ímpares e os números pares que estão entre os dois números. Se o número inicial for maior ou igual ao número final, apresente mensagem de erro para o usuário, informando a regra para o número inicial e número final.
+    Faça um programa que pergunte ao usuário um número inicial e um número final. Verifique se o número inicial é menor que o número
+    final e apresente na tela os números ímpares e os números pares que estão entre os dois números. 
+    Se o número inicial for maior ou igual ao número final, apresente mensagem de erro para o usuário, informando a regra para 
+    o número inicial e número final.
     */
 
     const numeroInicial = Number (prompt(`Informe o número inicial:`));
     const numeroFinal = Number (prompt(`Informe o número final:`));
-    let listaPares = [];
-    let listaImpares = [];
-
-    for(let contador = numeroInicial; contador <= numeroFinal; contador ++){
-        if(numeroInicial < numeroFinal){
-            if (contador % 2 === 0){
-                listaPares.push(contador);
+    
+    if (numeroInicial < numeroFinal) {
+        let numerosPares = [];
+        let numerosImpares = [];
+        for(let controle = numeroInicial; controle <= numeroFinal; controle++) {
+            if (controle % 2 === 0) {
+                numerosPares.push(controle);
             }
-            else{
-                listaImpares.push(contador);
+            else {
+                numerosImpares.push(controle);
             }
-        }else{
-                alert(`ERRO!! O NÚMERO INICIAL TEM QUE SER MENOS QUE O NÚMERO FINAL`);
-            }
+        }
+        document.write(`Números Pares: ${numerosPares.join(", ")}<br>`);
+        document.write(`Números Ímpares: ${numerosImpares.join(", ")}`);
     }
-    document.write(`ÍMPARES: ${listaImpares.join(" - ")}<br/>`);
-    document.write (`PARES: ${listaPares.join(" - ")}`);
-
+    else {
+        document.write(`Número Inicial precisa ser menor que o Número Final!`);
+    }
 
 </script>
