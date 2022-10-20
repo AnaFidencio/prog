@@ -6,13 +6,12 @@
     No final, apresente o maior número informado pelo usuário.
     */
 
-    const n1 = Number(promt("Informe um número"));
-    const n2 = Number(promt("Informe um número"));
-    const n3 = Number(promt("Informe um número"));
-    const n4 = Number(promt("Informe um número"));
-    const n5 = Number(promt("Informe um número"));
+ const pergunta = prompt("Informe quantos números deseja:");
+ let listaDeNumeros = [];
 
-    for (contador = n1; contador <= n5; contador++){
-        
+ for (contador = 1; contador <= pergunta; contador++) {
+       listaDeNumeros.push  (Number(prompt(`Número ${contador}: `)));
     }
+
+    document.write(`O maior número da lista: ${listaDeNumeros.join (" - ")} <br/> é: ${listaDeNumeros.reverse((a, b)=> a-b)[0]}.`);
 </script>
