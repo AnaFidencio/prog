@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA
+    Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. Apresente em tela a população prevista para um prazo de 5 anos
+     e um prazo de 10 anos. Apresente os dados em tela.
+    */
+let habitantes = 50000;
+let cincoAnos = 0;
+let dezAnos = 0;
+
+   for(resultado = 0; resultado <=10;resultado ++){
+    habitantes = habitantes + (habitantes * 0.015);
+    if(resultado === 5){
+        cincoAnos = parseInt(habitantes)
+   }else{
+    dezAnos = parseInt(habitantes)
+   }
+    }
+   
+document.write (`O número de habitantes em 5 anos: ${cincoAnos}<br/> O número de habitantes em 10 anos é: ${dezAnos}.`)
+</script>

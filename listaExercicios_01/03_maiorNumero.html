@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que peça ao usuário para informar cinco números.
+    No final, apresente o maior número informado pelo usuário.
+    */
+
+ const pergunta = prompt("Informe quantos números deseja:");
+ let listaDeNumeros = [];
+
+ for (contador = 1; contador <= pergunta; contador++) {
+       listaDeNumeros.push  (Number(prompt(`Número ${contador}: `)));
+    }
+
+    document.write(`O maior número da lista: ${listaDeNumeros.join (" - ")} <br/> é: ${listaDeNumeros.reverse((a, b)=> a-b)[0]}.`);
+</script>

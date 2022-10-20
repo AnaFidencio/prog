@@ -1,56 +1,59 @@
 # Lista de Exercícios
 
-## Problema 01: Separar pares
-Considere a lista de números abaixo:
+## Problema 01: Letras repetidas
+Considere a lista de letras abaixo:
 
-let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+let listaDeNumeros = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
 
-Faça um programa que identifique os números pares e apresente-os ao fim do programa, ordenados de forma crescente.
+Faça um programa que identifique as letras repetidas que estão contidas na lista e apresente cada letra apenas uma única vez, e em ordem alfabética.
 
-## Problema 02: Listar Nomes Femininos e Masculinos
-Considere a lista de nomes abaixo:
+*Letras maiúsculas e minúsculas são a mesma letra e não podem ser repetidas!
 
-let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
+**Apresente apenas letras minúsculas!
 
-Para cada nome que for lido na estrutura de repetição, pergunte ao usuário se é Masculino (M) ou Feminino (F). 
+## Problema 02: Média do aluno
+Pergunte ao professor quantas notas o aluno obteve.
 
-De acordo com a resposta do usuário, adicione na lista correspondente. Apresente as duas listas de nomes ao final do programa.
+Na sequência, usando for, peça para o professor informar todas as notas do aluno.
 
-## Problema 03: Listar números pares e ímpares
-Considere a lista de números abaixo:
+Calcule a média das notas e apresente o resultado na tela.
 
-let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+## Problema 03: Maior número
+Faça um programa que peça ao usuário para informar cinco números.
 
-Separe os números pares e os números ímpares em listas distintas e apresente as listas de forma crescente e forma descrescente.
+No final, apresente o maior número informado pelo usuário.
 
-## Problema 04: Separar números pares
-Considere a lista abaixo:
+## Problema 04: Números ímpares até 50
+Faça um programa que apresente na tela os números ímpares de 1 até 50.
 
-let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+## Problema 05: Validar número primo
+Faça um programa que peça para o usuário informar um número.
 
-Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
+Identifique se o número fornecido pelo usuário é um número primo e apresente na tela.
 
-## Problema 05: Nomes que iniciam com vogais
-Considere a lista de nomes abaixo:
+## Problema 06: Imprimir números
+Faça um programa que pergunte ao usuário um número inicial e um número final.
 
-let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+Verifique se o número inicial é menor que o número final e apresente na tela os números ímpares e os números pares que estão entre os dois números.
 
-Identifique os nomes que começam com qualquer vogal (A, E, I, O, U) e apresente os nomes em ordem alfabética.
+Se o número inicial for maior ou igual ao número final, apresente mensagem de erro para o usuário, informando a regra para o número inicial e número final.
 
-## Problema 06: Buscar "Joãos"
-Considere a lista de nomes abaixo:
+## Problema 07: Taxa de crescimento da população
+Supondo que a população de um país seja da ordem de 80000 habitantes, com uma taxa anual de crescimento de 3%, identifique quantos anos serão necessários para que o número de habitandes atinja 200000 habitantes.
 
-let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+## Problema 08: Soma e média dos números
+Faça um programa que leia 5 números e informe a soma e média dos números.
 
-Identifique todos os nomes que contém "João" em qualquer parte do nome e separe-os em uma lista. Apresente a lista ao final do programa.
+## Problema 09: Calcular população prevista
+Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano.
 
-Considere que poderão haver "Joãos" sem ~ (til).
+Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos.
 
-## Problema 07: Contar números inteiros positivos
-Considere a lista de números abaixo:
+Apresente os dados em tela.
 
-let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+## Problema 10: Eleição de representante de sala
+Peça para o programa perguntar ao professor regente o nome dos três candidados a representante da sala.
 
-Identifique APENAS os números INTEIROS e POSITIVOS. 
+Peça também para o programa perguntar ao professor regente a quantidade de alunos votantes.
 
-Adicione-os em uma lista e apresente ao fim do programa, indicando também quantos números foram localizados.
+Desenvolva um programa que armazene o voto de cada aluno da sala e apresente o resultado da votação, com o quantitativo de votos e também a porcentagem de votos de cada candidato a representante de sala.
