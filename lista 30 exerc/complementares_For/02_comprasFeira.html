@@ -14,17 +14,33 @@
     Após o usuário informar a quantia vendida para cada item, calcule e apresente o faturamento do feirante.
     */
 
-    //ENTRADA
-let produtos = [tomate, batata, batata-doce, alface, cebola, cebolinha, beterraba];
-//PROCESSAMENTO
-for (let contador = 1; contador <= produtos; contador++){
-    let produtosVendidos = prompt(`Informe a quantidade de ${produtos} que foram vendidos em kg:`);
+    const tomate = Number(prompt(`Informe a quantiadade de tomates que foram vendidos em kg`));
+    const batata = Number(prompt(`Informe a quantiadade de batata que foram vendidos em kg`));
+    const batataDoce = Number(prompt(`Informe a quantiadade de batata-doce que foram vendidos em kg`));
+    const alface = Number(prompt(`Informe a quantiadade de alface que foram vendidos em kg`));
+    const cebola = Number(prompt(`Informe a quantiadade de cebola que foram vendidos em kg`));
+    const cebolinha = Number(prompt(`Informe a quantiadade de cebolinha que foram vendidos em kg`));
+    const beterraba = Number(prompt(`Informe a quantiadade de baterraba que foram vendidos em kg`));
 
-}
+    let calcTomate = 3.90 * tomate;
+    let calcBatata = 3.40 * batata;
+    let calcBatataDoce = 4.70 * batataDoce;
+    let calcAlface = 1.50 * alface;
+    let calcCebola = 2.90 * cebola;
+    let calcCebolinha = 1.40 * cebolinha;
+    let calcBeterraba = 4.10 * beterraba;
 
-    //PROCESSAMENTO
+    const faturamento = calcTomate + calcBatata + calcBatataDoce + calcAlface + calcCebola + calcCebolinha + calcBeterraba;
 
-    
-    //SAÍDA
-    document.write(contador)
+
+    document.write (`tomates vendidos: ${tomate}kg = ${calcTomate} reais </br>`);
+    document.write (`batatas vendidas: ${batata}kg = ${calcBatata} reais </br>`);
+    document.write (`batatas-doce vendidas: ${batataDoce}kg = ${calcBatataDoce} reais </br>`);
+    document.write (`alfaces vendidas: ${alface}kg = ${calcAlface} reais </br>`);
+    document.write (`cebolas vendidas: ${cebola}kg = ${calcCebola} reais </br>`);
+    document.write (`cebolinhas vendidas: ${cebolinha}kg = ${calcCebolinha} reais </br>`);
+    document.write (`beterrabas vendidas: ${beterraba}kg = ${calcBeterraba} reais </br>`);
+    document.write (`O faturamento do feirante é de: ${faturamento} reais`);
+
+
 </script>
